@@ -1,0 +1,46 @@
+/*widget*/
+
+.ui-radio {
+    width:100%;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    margin: 0 auto;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible;  
+}
+
+
+.ui-appearance-radio
+  line-height: $line-height;
+  font-size: $line;
+  .ui-appearance-radio-label-frame.w-auto
+    margin-left: $brick;
+    width: auto;
+    .ui-appearance-radio-label
+      text-align: left;
+  .ui-appearance-radio-sprite-frame
+    width: $brick;
+    height: $brick;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    .ui-appearance-radio-sprite
+      display:block;      
+      width: $line;
+      height: $line;
+      border-radius: $border-radius;
+      margin: $line-margin auto;
+        .ui-appearance-radio-sprite-glyph
+          //margin: $sub-line-margin;
+
+ui-states('.ui-appearance-radio','.ui-appearance-radio-label', $ui-states, iLabel, $interactivityTolerance)
+ui-states('.ui-appearance-radio','.ui-appearance-radio-sprite', $ui-states, iRadio, $interactivityTolerance)
+
+
+
+
+

@@ -1,0 +1,27 @@
+{
+  "name": "@telogical/telui-radio",
+  "version": "1.0.0",
+  "description": "Radio and radiogroup type controls designed for use in the telui component system",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Telogical/telui-radio.git"
+  },
+  "keywords": [
+    "telui",
+    "radio",
+    "radiogroup",
+    "angular",
+    "react",
+    "stylus"
+  ],
+  "author": "jharlin@telogical.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Telogical/telui-radio/issues"
+  },
+  "homepage": "https://github.com/Telogical/telui-radio"
+}

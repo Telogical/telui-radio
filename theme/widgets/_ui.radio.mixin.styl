@@ -1,0 +1,45 @@
+radio(){
+
+  
+}
+
+
+
+radioDefault(ui-state,tolerance, ui-statename, i-statename){
+  down = darken(desaturate(ui-state, (tolerance * 0.3)), (tolerance* 0.7));
+  
+  if(ui-statename =='default'){
+    down = darken(ui-state, tolerance* 2);
+  }
+  
+  radio()
+  color: down;
+}
+
+radioHover(ui-state,tolerance){
+  up = lighten(desaturate(ui-state, (tolerance * 0.7)), (tolerance* 0.3));
+  down = darken(saturate(ui-state, (tolerance * 0.8)), (tolerance* 0.2));
+  radio();
+  color: up; 
+
+}
+
+radioActive(ui-state,tolerance){
+  up = lighten(desaturate(ui-state, (tolerance * 0.7)), (tolerance* 0.3));
+  down = darken(saturate(ui-state, (tolerance * 0.8)), (tolerance* 0.2));
+
+  color: down;
+}
+
+
+radioDisabled(ui-state,tolerance){
+  radioDefault(ui-state,tolerance, 'default', 'default');
+  opacity:0.5;
+}
+
+iRadio = {
+    'default': radioDefault,
+    'hover': radioHover,
+    'active': radioActive,
+    'disabled' : radioDisabled   
+}
