@@ -1,5 +1,3 @@
-
-
 global.UI = global.UI || require('@telogical/telui-core');
 
 global.UI.Appearances.radio = require('./appearances/radio')(global.UI);

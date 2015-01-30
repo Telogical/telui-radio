@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Telogical/telui-radio/issues"
   },
+  "dependencies": {
+    "@telogical/telui-core": "1.x.x"
+  },
   "homepage": "https://github.com/Telogical/telui-radio"
 }
