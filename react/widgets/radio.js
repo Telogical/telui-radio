@@ -1,9 +1,5 @@
-var React = global.React;
-
 function Radio(ui) {
-
   'use strict';
-
   return React.createClass({
     displayName: 'Radio',
     mixins: [ui.Mixins.Widget],
@@ -14,12 +10,9 @@ function Radio(ui) {
 
     },
     __onFocus: function onFocus() {
-
       this.setState({
         active: true
       });
-
-     
     },
     __onChange: function onChange(value, list) {
       if (!list.props.disabled && list && value) {
@@ -109,6 +102,5 @@ function Radio(ui) {
     }
   });
 }
-
 
 module.exports = Radio;

@@ -1,5 +1,3 @@
-var React = global.React;
-
 function Radiogroup(ui) {
   'use strict';
 
@@ -12,19 +10,19 @@ function Radiogroup(ui) {
     },
 
     __onFocus: function onFocus() {
-      
-//      this.setState({
-//        hover: true
-//      });
-      
-      console.log('focused (radiogroup)', arguments);
+      // this.setState({
+      //  hover: true
+      // });
+      // console.log('focused (radiogroup)', arguments);
     },
 
     __onClick: function onClick() {
+      var model = this.props,
+        canClick = !model.disabled &&
+        model.click &&
+        typeof model.click === 'function';
 
-      var model = this.props;
-
-      if (!model.disabled && model.click && typeof model.click === 'function') {
+      if (canClick) {
         model.click();
       }
     },
@@ -57,20 +55,13 @@ function Radiogroup(ui) {
         checked: !!this.props.value || false
       };
     },
-
-
     componentDidUpdate: function componentDidUpdate() {
 
-
     },
-
     componentDidMount: function componentDidMount() {
 
     },
     componentWillMount: function componentWillMount() {
-
-      //Move this to a List Mixin
-
       var component = this;
 
       if (component.props.text === false) {
@@ -78,7 +69,6 @@ function Radiogroup(ui) {
       }
 
       function theDataDoesNotHaveIds() {
-
         return component.props.data &&
           component.props.data.length &&
           !component.props.data[0].id &&
@@ -95,7 +85,6 @@ function Radiogroup(ui) {
         component.props.name = component._descriptor.type.displayName + '_' + Math.round(Math.random() * 9999);
       }
 
-      //data must contain unique Ids
       if (theDataDoesNotHaveIds()) {
         console.warn(
           component.props.data,
@@ -174,6 +163,5 @@ function Radiogroup(ui) {
     }
   });
 }
-
 
 module.exports = Radiogroup;
