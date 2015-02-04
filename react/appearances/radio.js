@@ -1,5 +1,3 @@
-var React = require('react/addons');
-
 function AppearanceRadio(ui) {
   'use strict';
 
