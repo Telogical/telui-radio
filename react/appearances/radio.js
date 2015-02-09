@@ -20,7 +20,7 @@ function AppearanceRadio(ui) {
         domx = React.DOM;
 
       var value = this.props.value,
-        list = this.props.list,
+        list = this.props.list || [],
         key = this.props.key || this.props.id,
         control = this.props.control,
         active = (this.props.active || this.state.active),

@@ -32,7 +32,7 @@ TelogicalUi
           name: scope.name,
           appearance: scope.appearance || 'radio',
           orientation: scope.orientation || 'vertical',
-          parentWidth: $el.width(),
+          //parentWidth: $el.width(),
           scope: scope
         };
 

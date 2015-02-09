@@ -29,7 +29,7 @@ function Radio(ui) {
       var id = this.props.id,
         key = this.props.key || this.props.id,
         value = this.props.value,
-        list = this.props.list,
+        list = this.props.list || [],
         listValue = this.props.listValue,
         name = this.props.name,
         disabled = !!this.props.disabled,
