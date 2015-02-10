@@ -1,12 +1,8 @@
-//global.UI = global.UI || require('@telogical/telui-core');
-require('@telogical/telui-core');
+var TelUI = require('@telogical/telui-core');
 
-global.UI.Appearances.radio = require('./appearances/radio')(global.UI);
+TelUI.Appearances.radio = require('./appearances/radio')(TelUI);
 
-global.UI.Radio = require('./widgets/radio')(global.UI);
-global.UI.Radiogroup = require('./widgets/radiogroup')(global.UI);
+TelUI.Radio = require('./widgets/radio')(TelUI);
+TelUI.Radiogroup = require('./widgets/radiogroup')(TelUI);
 
-
-console.log('Radio', global.UI.Appearances);
-
-module.exports = global.UI;
+module.exports = TelUI;

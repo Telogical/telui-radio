@@ -1,6 +1,9 @@
 function AppearanceRadio(ui) {
   'use strict';
 
+  var React = ui.Core.React,
+    _ = ui.Core._;
+
   return React.createClass({
     displayName: 'Appearance.radio',
     mixins: [ui.Mixins.Appearance],

@@ -1,7 +1,8 @@
-var TelogicalUi = angular.module('TelUI'),
-  UI = require('../react/telui');
+var UI = require('../react/telui'),
+  React = UI.Core.React;
 
-TelogicalUi
+angular
+  .module('TelUI')
   .directive('teluiRadiogroup', function reactCheckboxDirective() {
     'use strict';
 
@@ -76,5 +77,5 @@ TelogicalUi
       template: '<div class="waffles"></div>',
       link: link
     };
-  
+
   });

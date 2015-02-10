@@ -1,6 +1,9 @@
 function Radiogroup(ui) {
   'use strict';
 
+  var React = ui.Core.React,
+    _ = ui.Core._;
+
   return React.createClass({
     displayName: 'Radiogroup',
     mixins: [ui.Mixins.List],
