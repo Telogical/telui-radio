@@ -1,6 +1,6 @@
 {
   "name": "@telogical/telui-radio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Radio and radiogroup type controls designed for use in the telui component system",
   "main": "index.js",
   "scripts": {
